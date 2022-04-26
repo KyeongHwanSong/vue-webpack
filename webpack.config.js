@@ -40,8 +40,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.m?js$/,
-				exclude: /(node_modules|bower_components)/,
+				test: /\.js$/,
 				use: ['babel-loader'],
 			},
 			{ test: /\.(png|jpe?g|gif|webp)$/, use: 'file-loader' },

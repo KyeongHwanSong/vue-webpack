@@ -1,17 +1,20 @@
 <template>
-	<div>{{ massage }}</div>
-	<div></div>
-	<HelloWorld />
+	<h1 @click="increase">1</h1>
 </template>
-<script>
-import HelloWorld from '~/components/HelloWorld';
 
+<script>
 export default {
-	components: { HelloWorld },
 	data() {
 		return {
-			massage: '1121',
+			count: 0,
 		};
 	},
 };
 </script>
+
+<style>
+h1 {
+	font-size: 50x;
+	color: royalblue;
+}
+</style>
